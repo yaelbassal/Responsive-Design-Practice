@@ -1,0 +1,71 @@
+body {
+  background-color: #e26147;
+  margin: 0% 5% 5%;
+  font-family: serif;
+}
+
+h1.title {
+  text-align: center;
+  font-size: 2.5em;
+  text-transform: lowercase;
+  /*Make element glued to the screen */
+  /* position: fixed; */
+  /*make it relative to my viewport.The rest of the page is relative to the document, not the viewport*/
+}
+
+h1.title:hover {
+  font-size: 40px;
+  font-style: italic;
+  color: #fbdad8;
+}
+
+section, footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6b6b0;
+  padding: 1% 3% 3%;
+  margin: 3%;
+  text-align: left;
+  border: 4px solid #b72214;
+}
+
+section h2 {
+  font-size: 2em;
+  text-align: left;
+  font-style: italic;
+  color:#b72214;
+}
+
+.favorites h3::before{
+  content: "☑️"
+}
+
+.least-favorites h3::before{
+  content: "👎"
+}
+
+img {
+  border-radius: 50%;
+  border: 3px solid #b72214;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+#footer {
+  padding: .5em;
+}
+
+
+/*
+rem relative to html root element, em relative to parent element. 1 em is about 16px, the browser default size. Browser converts rem and em into pixels on the browser. User can control the size of the text, and your website will respond to their settings.
+
+vh and vw for landing page.
+
+For the most responsive use rem units.
+*/
+
+/*
+To Do: Better understand rem and em
+*/
